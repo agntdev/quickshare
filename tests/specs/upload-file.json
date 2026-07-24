@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Upload file",
+    "steps": [
+      {
+        "expect": [
+          {
+            "method": "sendMessage",
+            "payload": {
+              "text": "Upload a file to generate a download link"
+            }
+          }
+        ],
+        "send": {
+          "callback": "menu:upload-file"
+        }
+      }
+    ]
+  }
+]
